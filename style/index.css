@@ -332,3 +332,309 @@ body {
     text-align: center;
     color: #eee;
 }
+
+.module-wrapper {
+    width: 100%;
+    background: #fff;
+}
+
+.module-wrapper .module {
+    width: 1180px;
+    margin: 0 auto;
+}
+
+.module-wrapper .module .m-list {
+    display: flex;
+    width: 100%;
+    padding: 8px 70px 20px 70px;
+    box-sizing: border-box;
+}
+
+.module-wrapper .module .m-list li {
+    position: relative;
+    flex: 1;
+    height: 124px;
+    background: #fff;
+    transition: all .5s ease-in-out;
+}
+
+.module .m-list li .animate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+    border-radius: 10px 10px 0 0;
+    background: #fff;
+    transition: all .5s ease-in-out;
+}
+
+.module-wrapper .module .m-list li:hover .animate {
+    height: 140px;
+    transform: translateY(-100px);
+}
+
+.m-list li:hover .animate .discri {
+    height: 124px;
+}
+
+.m-list li .animate .discover {
+    width: 60px;
+    height: 60px;
+    background: url('../img/ico_module.png') no-repeat 1px;
+    background-size: auto 100%;
+}
+
+.m-list li:nth-child(2) .animate .discover {
+    background-position: -59px 0;
+}
+
+.m-list li:nth-child(3) .animate .discover {
+    background-position: -119px 0;
+}
+
+.m-list li:nth-child(4) .animate .discover {
+    background-position: -179px 0;
+}
+
+.m-list li:nth-child(5) .animate .discover {
+    background-position: -239px 0;
+}
+
+.m-list li:nth-child(6) .animate .discover {
+    background-position: -299px 0;
+}
+
+.m-list li:nth-child(7) .animate .discover {
+    background-position: -359px 0;
+}
+
+.m-list li .animate .discri {
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    height: 44px;
+    text-align: center;
+    font-size: 16px;
+    color: #444;
+    background: #fff;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+}
+
+.animate .discri h5 {
+    height: 44px;
+    line-height: 44px;
+}
+
+.animate .discri p {
+    padding: 0 15px;
+    font-size: 12px;
+    color: #999999;
+    line-height: 20px;
+    text-align: left;
+}
+
+.recommend-wrapper {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.recommend-wrapper .recommend {
+    display: flex;
+    justify-content: space-between;
+    width: 1180px;
+    margin: 0 auto;
+}
+
+.recommend-wrapper .recommend .banner-left {
+    position: relative;
+    height: 410px;
+    width: 393px;
+    background: url('../img/recommend/ico_placeholder_01.png') no-repeat center/100% 100%;
+    overflow: hidden;
+    font-size: 20px;
+}
+
+.recommend-wrapper .recommend .banner-left a {
+    position: absolute;
+    width: 100%;
+    height: 410px;
+    background: url('../img/recommend/ico_beiyunzhongxin.png') no-repeat center/auto 100%;
+    color: #fff;
+}
+
+.recommend-wrapper .recommend .banner-left a:nth-child(3) {
+    left: 70px;
+    background-image: url('../img/recommend/ico_shengzhizhongxin.png')
+}
+
+.recommend-wrapper .recommend .banner-left a:nth-child(2) {
+    left: 35px;
+    background-image: url('../img/recommend/ico_shoushuzhongxin.png')
+}
+
+.recommend .banner-left a span {
+    position: absolute;
+    width: 20px;
+    left: 7px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.recommend .banner-left a:hover span {
+    display: none;
+}
+
+.recommend .banner-left a .descri {
+    position: absolute;
+    left: 35px;
+    bottom: 20px;
+}
+
+.banner-left a .descri p {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.recommend .banner-right {
+    display: flex;
+    width: -webkit-calc(100%-393px);
+    width: calc(100% - 393px);
+    background: #fff;
+}
+
+.recommend .banner-right li {
+    flex: 1;
+    height: 410px;
+    padding: 25px 0 25px 45px;
+    box-sizing: border-box;
+}
+
+.recommend .banner-right li:hover {
+    background: rgb(255, 239, 239);
+}
+
+.banner-right li:hover .border .picture>img {
+    height: 230px;
+}
+
+.recommend .banner-right li .border {
+    width: 100%;
+    height: 100%;
+    padding: 10px 0;
+    border-right: 1px solid #eee;
+    box-sizing: border-box;
+}
+
+.banner-right li .border h3 {
+    font-size: 20px;
+    height: 30px;
+    line-height: 30px;
+    color: #444;
+}
+
+.banner-right li .border p {
+    width: 200px;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    color: #999;
+    padding-right: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.banner-right li .border .detail {
+    margin-top: 10px;
+    width: 100px;
+}
+
+.banner-right li .border .detail>a {
+    display: block;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 30px;
+    background: #F78;
+}
+
+.banner-right li .border .picture {
+    display: flex;
+    width: 100%;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.banner-right li .border .picture>img {
+    height: 216px;
+    width: auto;
+    transition: height .5s ease-in-out;
+}
+
+.wiki {
+    display: flex;
+    width: 1180px;
+    margin: 10px auto;
+    padding: 15px 40px;
+    background: #fff;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.wiki a {
+    display: flex;
+    width: 10%;
+    color: #444;
+    font-size: 14px;
+    align-items: center;
+}
+
+.wiki a:hover {
+    color: #f78;
+}
+
+.wiki a i {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    background: url('../img/recommend/ico_biaoqian.png') no-repeat 0 0/auto 100%;
+}
+
+.wiki a:nth-child(2) i {
+    background-position: -20px 0;
+}
+
+.wiki a:nth-child(3) i {
+    background-position: -40px 0;
+}
+
+.wiki a:nth-child(4) i {
+    background-position: -60px 0;
+}
+
+.wiki a:nth-child(5) i {
+    background-position: -80px 0;
+}
+
+.wiki a:nth-child(6) i {
+    background-position: -100px 0;
+}
+
+.wiki a:nth-child(7) i {
+    background-position: -120px 0;
+}
+
+.wiki a:nth-child(8) i {
+    background-position: -140px 0;
+}
+
+.wiki a:nth-child(9) i {
+    background-position: -160px 0;
+}
