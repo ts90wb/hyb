@@ -578,7 +578,7 @@ body {
     transition: height .5s ease-in-out;
 }
 
-.wiki {
+.wiki-package {
     display: flex;
     width: 1180px;
     margin: 10px auto;
@@ -588,7 +588,7 @@ body {
     align-items: center;
 }
 
-.wiki a {
+.wiki-package a {
     display: flex;
     width: 10%;
     color: #444;
@@ -596,45 +596,188 @@ body {
     align-items: center;
 }
 
-.wiki a:hover {
+.wiki-package a:hover {
     color: #f78;
 }
 
-.wiki a i {
+.wiki-package a i {
     width: 20px;
     height: 20px;
     margin-right: 5px;
     background: url('../img/recommend/ico_biaoqian.png') no-repeat 0 0/auto 100%;
 }
 
-.wiki a:nth-child(2) i {
+.wiki-package a:nth-child(2) i {
     background-position: -20px 0;
 }
 
-.wiki a:nth-child(3) i {
+.wiki-package a:nth-child(3) i {
     background-position: -40px 0;
 }
 
-.wiki a:nth-child(4) i {
+.wiki-package a:nth-child(4) i {
     background-position: -60px 0;
 }
 
-.wiki a:nth-child(5) i {
+.wiki-package a:nth-child(5) i {
     background-position: -80px 0;
 }
 
-.wiki a:nth-child(6) i {
+.wiki-package a:nth-child(6) i {
     background-position: -100px 0;
 }
 
-.wiki a:nth-child(7) i {
+.wiki-package a:nth-child(7) i {
     background-position: -120px 0;
 }
 
-.wiki a:nth-child(8) i {
+.wiki-package a:nth-child(8) i {
     background-position: -140px 0;
 }
 
-.wiki a:nth-child(9) i {
+.wiki-package a:nth-child(9) i {
     background-position: -160px 0;
+}
+
+.breed-cases {
+    display: flex;
+    width: 1180px;
+    height: 173px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+.breed-cases .b-c-title {
+    width: 237px;
+    height: 173px;
+    background: url('../img/recommend/ico_diary.png') no-repeat center/237px 173px;
+}
+
+.breed-cases .content-wrapper {
+    position: relative;
+    width: 893px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.breed-cases .content-wrapper .b-c-content {
+    position: absolute;
+    display: flex;
+    height: 100%;
+}
+
+.breed-cases .content-wrapper .b-c-content li {
+    display: flex;
+    height: 100%;
+    width: 893px;
+}
+
+.b-c-content li .personal {
+    display: flex;
+    height: 100%;
+    padding: 30px 40px 30px 10px;
+    box-sizing: border-box;
+    flex: 1;
+    font-size: 12px;
+    color: #72706e;
+    justify-content: space-between;
+}
+
+.b-c-content li .personal:hover {
+    background: rgb(255, 239, 239);
+}
+
+.b-c-content li .personal:hover .discri>h4 {
+    color: #f78;
+}
+
+.b-c-content li .personal .avatar {
+    margin-right: 10px;
+}
+
+.b-c-content li .personal .avatar>img {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.b-c-content li .personal .discri>h4 {
+    height: 24px;
+    font-size: 16px;
+    color: #444;
+    line-height: 24px;
+}
+
+.b-c-content li .personal .discri>p {
+    height: 40px;
+    margin-top: 8px;
+    line-height: 20px;
+    overflow: hidden;
+}
+
+.b-c-content li .personal .discri>span {
+    height: 22px;
+    margin-top: 4px;
+    line-height: 22px;
+    color: #f78;
+}
+
+.b-c-content li:nth-child(n+1) .wrapper {
+    height: 100%;
+    padding: 0 40px 0 10px;
+    box-sizing: border-box;
+    flex: 1;
+}
+
+.b-c-content li:nth-child(n+1) .wrapper:hover {
+    background: rgb(255, 239, 239);
+}
+
+.b-c-content li:nth-child(n+1) .wrapper .personal {
+    display: flex;
+    padding: 0;
+    height: 50%;
+    padding: 15px 0;
+    justify-content: flex-start;
+}
+
+.b-c-btn {
+    position: relative;
+    width: 50px;
+}
+
+.b-c-btn .btn-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.b-c-btn .btn-wrapper span {
+    display: flex;
+    width: 20px;
+    height: 50px;
+    border: 1px solid #eee;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    font-size: 14px;
+}
+
+.b-c-btn .btn-wrapper span:hover {
+    background: #eee;
+    cursor: pointer;
+}
+
+.b-c-btn .btn-wrapper span:nth-child(1) {
+    border-radius: 10px 10px 0 0;
+}
+
+.b-c-btn .btn-wrapper span:nth-child(2) {
+    border-radius: 0 0 10px 10px;
+}
+
+.b-c-btn .btn-wrapper span:nth-child(2) i {
+    transform: rotateZ(180deg);
 }
