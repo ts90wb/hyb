@@ -477,7 +477,7 @@
     .complex-wrapper .ad {
         width: 1180px;
         height: 100px;
-        margin: 20px auto;
+        margin: 20px auto 0;
     }
     
     .complex-wrapper .ad img {
@@ -485,7 +485,7 @@
         height: 100%;
     }
     
-    .pregnancy-content a {
+    .pregnancy-content .c-left a {
         height: 30px;
         line-height: 30px;
         padding: 0 12px;
@@ -494,7 +494,7 @@
         border: 1px solid #fff;
     }
     
-    .pregnancy-content a:hover {
+    .pregnancy-content .c-left a:hover {
         color: #f78;
         border: 1px solid #f78;
     }
@@ -519,7 +519,13 @@
         background-position-x: -70px;
     }
     
+    .pregnancy-content .s-items:nth-child(4) .p-s-icon i {
+        background-position-x: -105px;
+    }
+    
     .pregnancy-content h4 {
+        width: 100px;
+        text-align: left;
         height: 35px;
         margin-left: 20px;
         line-height: 35px;
@@ -539,10 +545,52 @@
     
     .pregnancy-content .sort .s-items .p-s-link {
         display: flex;
-        margin-left: 20px;
         flex-direction: column;
     }
     
     .pregnancy-content .s-items .p-s-link .group {
         display: flex;
+    }
+    
+    .pregnancy-content .c-right {
+        width: -webkit-calc(100% - 885px);
+        width: calc(100% - 885px);
+        border: 1px solid #eee;
+        box-sizing: border-box;
+    }
+    
+    .pregnancy-content .c-right h4 {
+        height: 28px;
+        font-size: 22px;
+        color: #525252;
+        font-weight: normal;
+        margin: 20px 0 0 15px;
+        line-height: 28px;
+    }
+    
+    .pregnancy-content .c-right .recommend {
+        display: flex;
+        height: -webkit-calc(100% - 48px);
+        height: calc(100% - 48px);
+        margin-left: 15px;
+        box-sizing: border-box;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    .pregnancy-content .c-right .recommend a.r-item {
+        display: flex;
+    }
+    
+    .pregnancy-content .c-right .r-item img {
+        width: 90px;
+        height: 65px;
+    }
+    
+    .pregnancy-content .c-right .r-item p {
+        margin-left: 10px;
+    }
+    
+    .pregnancy-content .c-right .r-item:hover p {
+        color: #f78;
     }
